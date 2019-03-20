@@ -3,19 +3,19 @@
 <HTML>
 
   <head>
-  
+
     <link rel="stylesheet" href="css/style.css" </link>
     <link rel="stylesheet" href="css/responsive.css" </link>
     <link rel="stylesheet" href="css/normalize.css" </link>
-	
+
     <title> Home </title>
-	
+
 </head>
 
 <body>
 
   <h1> Spirit Games </h1>
-  
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -24,69 +24,39 @@
 	  <li><a href="cart.html"><img id = "shopping-cart" src="img/shopping cart.png"></a></li>
     </ul>
    </nav>
-   
-	<div>
-		<h2> Sign up for our Newsletter! <h2>
-        <form action="sql/action_page.sql">
-			First Name:<br>
-			<input type="text" name="firstname"><br>
-			<br>
-			Last Name:<br>
-			<input type="text" name="lastname"><br>
-			<br>
-			Email:<br>
-			<input type="text" name="email"><br>
-			<br>
-			Password:<br>
-			<input type="password" name="pswrd"><br>
-			<br>
-			<input type="submit" value="Submit">
-			</form>
-	</div>
-	
-	<div class="slideshow">
-		<h3>Preview our Products!</h3>
-		<div class="slideshow-image">
-			<div class="slideshow-progress">1/5</div>
-			<img src="img/Super_Smash_Bros._Ultimate_Logo.png">
-			<div class="slideshow-caption">Super Smash Sons</div>
-		</div>
-		<div class="slideshow-image">
-			<div class="slideshow-progress">2/5</div>
-			<img src="img/gamenuetral.jpg">
-			<div class="slideshow-caption">The Game Nuetral</div>
-		</div>
-		<div class="slideshow-image">
-			<div class="slideshow-progress">3/5</div>
-			<img src="img/Super_Smash_Bros._Ultimate_Logo.png">
-			<div class="slideshow-caption">The P-Box and P-Controllers</div>
-		</div>
-		<div class="slideshow-image">
-			<div class="slideshow-progress">4/5</div>
-			<img src="img/Super_Smash_Bros._Ultimate_Logo.png">
-			<div class="slideshow-caption">Plumbers of the Hamburger</div>
-		</div>
-		<div class="slideshow-image">
-			<div class="slideshow-progress">5/5</div>
-			<img src="img/Super_Smash_Bros._Ultimate_Logo.png">
-			<div class="slideshow-caption">Sandwhich Kinglyknights</div>
-		</div>
-		<div class="slideshow-move">
-			<a class="slideshow-back" onclick="plusSlides(-1)"></a>
-			<a class="slideshow-forward" onclick="plusSlides(1)"></a>
-		</div>
-		<div class="slideshow-dot">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-		<div class="slideshow-script">
-		<script src="java/primary.js"></script>
-		</div>
-	</div>
-	
+ <div class="row">
+  <div class="side">
+    <form action="action_page.php">
+      <div class="container">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Super Smash Sons Is Back!!</p>
+      </div>
+
+      <div class="container" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        </label>
+      </div>
+
+      <div class="container">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+
+  </div>
+  <div class="main">
+    <div class="hero-image">
+      <div class="hero-text">
+        <button>Buy Now</button>
+      </div>
+    </div>
+</div>
+
+
+
+
     </body>
 </body>
 </html>
